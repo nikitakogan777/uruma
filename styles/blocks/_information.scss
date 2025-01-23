@@ -122,7 +122,6 @@
 }
 
 :root {
-
   --swiper-navigation-size: 16px !important;
   --swiper-theme-color: linear-gradient(180deg, rgba(126, 126, 126, 0.116) 0%, rgba(126, 126, 126, 0.4) 95.32%) !important;
 }
@@ -135,8 +134,6 @@
 
 .swiper-wrapper {
   padding-left: 11px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .swiper-button-next::after {

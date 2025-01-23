@@ -552,8 +552,6 @@ a {
 
 .swiper-wrapper {
   padding-left: 11px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .swiper-button-next::after {
