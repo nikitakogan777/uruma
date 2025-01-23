@@ -1,0 +1,47 @@
+.header {
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item--white {
+  color: var(--color-white);
+  text-shadow: 0 0 15px #E9E9E9;
+}
+
+.item--gray {
+  color: var(--color-gray);
+
+}
+
+.navigation__flex {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  gap: 11px;
+  padding-left: 60px;
+  min-width: 1192px;
+  min-height: 79px;
+  background-color: var(--color-dark-light);
+
+
+  @include  desktop {
+    min-width: 850px;
+    min-height: 63px;
+  }
+
+  @include tablet {
+    min-height: 55px;
+    min-width: 667px;
+    padding-left: 34px;
+  }
+
+  @include mobile {
+    min-width: 370px;
+    min-height: 45px;
+    padding-left: 24px;
+  }
+}
+

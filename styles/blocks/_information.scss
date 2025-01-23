@@ -1,0 +1,130 @@
+.information {
+  margin-top: 20px;
+  width: 838px;
+  height: 770px;
+  background-color: var(--color-dark-light);
+  border-radius: 18px;
+  border: 1px solid var(--color-border);
+}
+
+.services__body {
+  display: flex;
+  justify-content: center;
+  margin-top: 57px;
+}
+
+.services__body--flex {
+  border-bottom: 1px solid var(--color-border);
+  width: 814px;
+  height: 60px;
+}
+
+.services__list {
+  padding-left: 31px;
+  display: flex;
+  gap: 10px;
+
+  a {
+    color: var(--color-gray);
+  }
+}
+
+.services__item--comments {
+  text-shadow: 0 0 15px #FFFFFF;
+  backdrop-filter: blur(8.5px);
+
+  a {
+    display: inline-block;
+    padding-bottom: 3px;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: 50px;
+    backdrop-filter: blur(17px);
+  }
+}
+
+.technologies {
+
+  padding-top: 13px;
+  padding-left: 43px;
+
+  &__stack {
+    margin-top: 22px;
+  }
+
+  &__tools {
+    margin-top: 18px;
+  }
+
+  .about__block {
+    p {
+      color: var(--color-white);
+      border-left: 1px solid var(--color-border);
+      padding-left: 2px;
+    }
+  }
+}
+
+.stack__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-border);
+  border-radius: 31px;
+  width: 328px;
+  height: 40px;
+
+  &-item {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+.stack__text {
+  margin-bottom: 4px;
+}
+
+.stack__images__container {
+  border-left: 1px solid var(--color-border);
+  padding-left: 7px;
+}
+
+.tools__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-border);
+  border-radius: 31px;
+  width: 290px;
+  height: 40px;
+
+  &-item {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+.tools__text {
+  margin-bottom: 4px;
+}
+
+.tools__images__container {
+  border-left: 1px solid var(--color-border);
+  padding-left: 7px;
+}
+
+.swiper {
+  overflow: inheritgi !important;
+}
+
+
+
+

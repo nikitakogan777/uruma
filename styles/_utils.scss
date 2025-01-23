@@ -1,0 +1,17 @@
+.container {
+
+  padding-inline: 363px;
+
+  @include desktop {
+    padding-inline: 200px;
+  }
+
+  @include tablet {
+    padding-inline: 100px;
+  }
+
+  @include mobile {
+    padding-inline: 20px;
+  }
+}
+

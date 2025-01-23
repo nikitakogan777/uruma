@@ -1,0 +1,110 @@
+.projects {
+
+  &__block__body {
+    width: 242px;
+    height: 306px;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    box-shadow: 0 17.19px 33.37px 0 #FFFFFF14;
+    border-radius: 10px;
+
+  }
+
+  margin-top: 18px;
+}
+
+.swiper {
+  margin-top: 18px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 16px;
+  color: #FFFFFF;
+
+  span {
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 19px;
+  }
+
+  p {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 5px;
+    letter-spacing: 0.4px;
+    opacity: 0.8;
+  }
+}
+
+.avatar--flex {
+  margin-top: 3px;
+}
+
+.circle {
+  position: relative; /* Создаем контекст позиционирования */
+  width: 10px; /* Ширина контейнера (по большему кругу) */
+  height: 10px; /* Высота контейнера (по большему кругу) */
+}
+
+.circle svg {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Центрируем по вертикали */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигаем в центр */
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding-bottom: 11px;
+}
+
+.projects__info {
+  margin-bottom: auto;
+  width: 100%;
+  height: 142px;
+  backdrop-filter: blur(56px);
+  background: linear-gradient(180deg, rgba(126, 126, 126, 0.116) 0%, rgba(126, 126, 126, 0.4) 95.32%);
+  border-radius: 20px 20px 10px 10px;
+}
+
+.info__text  {
+  padding-top: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+  font-family: 'Stolzl', sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 15px;
+  }
+
+  p {
+    padding-inline: 10px;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: none;
+    width: 100%;
+    font-size: 10px;
+    opacity: 1;
+  }
+}
+
+.projects__block__body--dark {
+  background-image: none;
+  background-color: #000000;
+}
+
