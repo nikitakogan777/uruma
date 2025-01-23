@@ -25,6 +25,10 @@ body {
   line-height: 21px;
   background-color: var(--color-dark);
   color: var(--color-gray);
+
+  @include desktop-above {
+    overflow: hidden;
+  }
 }
 
 a {
