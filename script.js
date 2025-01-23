@@ -1,16 +1,22 @@
 var swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
     loop: true,
+    allowTouchMove: false,
+    direction: getDirection(),
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 
     autoplay: {
-        delay: 100000,
+        delay: 3000,
     },
     speed: 500,
-
+    on: {
+        resize: function () {
+            swiper.changeDirection(getDirection());
+        },
+    },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -26,3 +32,10 @@ var swiper = new Swiper(".swiper", {
         },
     },
 });
+
+function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? "horizontal" : "horizontal";
+
+    return direction;
+}

@@ -219,18 +219,8 @@ a {
   height: 306px;
   background-image: url("../images/background.png");
   background-size: cover;
-  box-shadow: 0 17.19px 33.37px 0 rgba(255, 255, 255, 0.0784313725);
+  box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.0784313725);
   border-radius: 10px;
-}
-
-.swiper {
-  margin-top: 18px;
-}
-
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .avatar__body {
@@ -550,8 +540,28 @@ a {
   padding-left: 7px;
 }
 
+:root {
+  --swiper-navigation-size: 16px !important;
+  --swiper-theme-color: linear-gradient(180deg, rgba(126, 126, 126, 0.116) 0%, rgba(126, 126, 126, 0.4) 95.32%) !important;
+}
+
 .swiper {
-  overflow: inherit !important;
+  margin-top: 18px;
+  height: 330px;
+}
+
+.swiper-wrapper {
+  padding-left: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-button-next::after {
+  padding-bottom: 24px !important;
+}
+
+.swiper-button-prev::after {
+  padding-bottom: 24px !important;
 }
 
 .header {
