@@ -6,6 +6,17 @@
   border-radius: 18px;
   border: 1px solid var(--color-border);
 
+  @include desktop {
+    width: 290px;
+    height: 660px;
+    margin-top: 18px;
+  }
+
+  @include mobile {
+    width: 326px;
+    height: 600px;
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -19,6 +30,10 @@
     flex-direction: column;
     gap: 9px;
     padding-top: 65px;
+
+    @include desktop {
+      padding-top: 0;
+    }
   }
 
   &__avatar {
@@ -33,6 +48,11 @@
   display: inline-flex;
   position: relative;
   top: -119px;
+
+  @include desktop {
+    width: 98px;
+    top: -104px;
+  }
 }
 .avatar__background {
   //opacity: 70%;
@@ -46,21 +66,31 @@
 
 .text-teg {
   color: var(--color-gray);
-  font-size: 26px;
   line-height: 34px;
+
+  @include fluid-text(26, 14)
 }
 
 .text-name {
   text-shadow: 0 0 15px #E9E9E9;
   font-weight: 400;
-  font-size: 31px;
+
+  @include fluid-text(31, 18)
 }
 
 .block {
   margin-bottom: 230px;
 
+  @include desktop {
+    margin-bottom: 170px;
+  }
+
+  @include mobile {
+    margin-bottom: 130px;
+  }
+
   span {
-    font-size: 11px;
+    @include fluid-text(11, 8);
     font-weight: 500;
     line-height: 16px;
     color: var(--color-white);
@@ -94,6 +124,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include desktop {
+    width: 80px;
+    height: 28px;
+  }
 }
 
 .block {
@@ -101,6 +136,11 @@
   gap: 7px;
   padding-top: 13px;
   border-top: 1px solid var(--color-border);
+
+  @include desktop {
+    gap: 11px;
+    padding-top: 30px;
+  }
 }
 
 .donate__body {
@@ -120,12 +160,26 @@
   box-shadow: 0 6px 16.3px 0 #77777759;
   width: 282px;
   height: 52px;
+
+  @include desktop {
+    width: 244px;
+    height: 44px;
+  }
 }
 
 .main {
   display: flex;
   justify-content: center;
   gap: 22px;
+
+  @include desktop {
+    gap: 16px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .avatar__text--small {

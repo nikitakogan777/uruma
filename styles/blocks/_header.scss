@@ -3,6 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include desktop {
+    margin-top: 26px;
+  }
+
+  @include mobile {
+    margin-top: 20px;
+  }
+
 }
 
 .item--white {

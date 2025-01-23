@@ -8,9 +8,21 @@
     box-shadow: 0 10px 15px 0 #FFFFFF14;
     border-radius: 10px;
 
+    @include desktop {
+      width: 90%;
+    }
+
+    @include tablet {
+      width: 95%;
+    }
+
   }
 
   margin-top: 18px;
+
+  @include desktop {
+    margin-top: 14px;
+  }
 }
 
 .avatar__body {
