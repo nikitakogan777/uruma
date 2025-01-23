@@ -16,6 +16,10 @@
       width: 95%;
     }
 
+    @include mobile {
+      width: 93%;
+    }
+
   }
 
   margin-top: 18px;
