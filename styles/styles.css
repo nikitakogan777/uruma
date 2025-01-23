@@ -217,7 +217,7 @@ a {
 .projects__block__body {
   width: 242px;
   height: 306px;
-  background-image: url("/images/background.png");
+  background-image: url("../images/background.png");
   background-size: cover;
   box-shadow: 0 17.19px 33.37px 0 rgba(255, 255, 255, 0.0784313725);
   border-radius: 10px;
