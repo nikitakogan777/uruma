@@ -1,6 +1,10 @@
 var swiper = new Swiper(".swiper", {
     slidesPerView: 'auto',
     loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
     allowTouchMove: false,
     direction: getDirection(),
     navigation: {
@@ -40,4 +44,19 @@ function getDirection() {
     var direction = window.innerWidth <= 760 ? "horizontal" : "horizontal";
 
     return direction;
+}
+
+const swiperEl = document.querySelector('.swiper');
+let isAutoplayPaused = false;
+
+if (window.innerWidth <= 768) {
+    swiperEl.addEventListener('click', () => {
+        if (isAutoplayPaused) {
+            swiper.autoplay.start();
+            isAutoplayPaused = false;
+        } else {
+            swiper.autoplay.stop();
+            isAutoplayPaused = true;
+        }
+    });
 }
