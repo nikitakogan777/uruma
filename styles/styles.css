@@ -775,20 +775,20 @@ a {
 }
 @media (max-width: 1280px) {
   .navigation__flex {
-    min-width: 850px;
+    min-width: 827px;
     min-height: 63px;
   }
 }
 @media (max-width: 1023px) {
   .navigation__flex {
     min-height: 55px;
-    min-width: 735px;
+    min-width: 731px;
     padding-left: 34px;
   }
 }
 @media (max-width: 767px) {
   .navigation__flex {
-    min-width: 370px;
+    min-width: 337px;
     min-height: 45px;
     padding-left: 24px;
   }
